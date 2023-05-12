@@ -1,1 +1,18 @@
+import java.util.Scanner;
 
+public class ExamPassChecker {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int passingMarks = 60; // Set the passing marks value to 60
+
+        System.out.print("Enter the marks scored by the student: ");
+        int marks = scanner.nextInt();
+
+        if (marks >= passingMarks) {
+            System.out.println("The student has passed the exam.");
+        } else {
+            System.out.println("The student has failed the exam.");
+        }
+    }
+}
